@@ -255,7 +255,7 @@ input{type="radio"}.visually-hidden {
 .images img{
 	display: block;
 	padding: 0;
-	margin: 0;
+	margin: 1px auto;
 	border: none;
 	width: 315px;
 	height: 300px;
