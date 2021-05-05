@@ -1,0 +1,1144 @@
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    background: #000;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 125px;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    width: 100%;
+}
+
+.header__logo{
+    display: block;
+    margin-left: 100px;
+    width: 214px;
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 10px;
+    z-index: 5;
+    box-sizing: border-box;
+}
+
+.header-wrapper{
+    width: 100%;
+    padding-right: 10rem;
+}
+
+.header-menu{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 16px;
+
+}
+
+.header-menu__list{
+    padding-right: 45px;
+    list-style: none;
+}
+
+.header-menu__list-item{
+    position: relative;
+    padding: 10px 0px;
+    transition: 1s linear;
+}
+
+.header-menu__list-item::after{
+    display: inline-block;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: solid #fff 3px ;
+    opacity: 0;
+    transition: .5s;
+    
+}
+
+.header-menu__list-item:hover::after,
+.header-menu__list-item:focus::after{
+    opacity: 1;    
+}
+
+.header-menu__list-item--active::after{
+    display: inline-block;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: solid #fff 3px ;
+    opacity: 1;
+    transition: .5s;
+    
+}
+
+.burger-menu{
+    display: none;
+}
+
+
+.header-info{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 320px;
+}
+
+.header-info__phone{
+    display: flex;
+    
+}
+
+.header-info__phone-img{
+    padding: 90px 5px 5px ;
+    width: 23px;
+    height: 23px;
+    background-color: #f7941d;
+    margin-bottom: 3px;
+}
+
+.header-info__phone-number{
+    font-size: 24px;
+    font-weight: bold;
+    align-self: flex-end;
+    padding: 0px 0px 7px 9px;
+
+}
+
+.header-info__web-site{
+    display: flex;
+}
+
+.header-info__web-site-img{
+    padding: 5px;
+    width: 23px;
+    height: 23px;
+    background-color: #f7941d;
+}
+
+.header-info__domain{
+    font-size: 16px;
+    align-self: center;
+    padding: 0px 0px 7px 9px;
+}
+
+.main-header{
+    text-align: left;
+}
+
+.swiper-container{
+    width: 100%;    
+}
+
+.swiper-slide{
+    height: 100vh;
+}
+
+.swiper-pagination-bullet{
+    background-color: #c8c8c8;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: #c2781f;
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.header-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-size: cover;
+    background-position: 100% 100%;
+    width: 100%;
+    height: 100vh;
+    min-height: 500px;
+}
+
+.header-content__tittle{
+  font-size: 100px;
+  color: white;  
+  line-height: 120px;
+  text-transform: uppercase;
+  padding-left: 250px;
+  margin-bottom: 0px;
+}
+
+.header-content__description{
+    font-size: 40px;
+    color: white;
+    line-height: 0px;
+    font-weight: 100; 
+    padding-left: 250px; 
+}
+  
+.image-1{
+    background-image: url(../image/header-image1.webp);
+}
+
+.image-2{
+    background-image: url(../image/design2.jpg);
+}
+
+.image-3{
+    background-image: url(../image/header-image1.webp);
+}
+
+.about-us {
+    background-color: #fff;
+    margin: 0;
+    padding: 200px 0px 0px 0px ;
+}
+
+.about-us__wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.about-us__wrapper__left-side{
+    max-width: 370px;
+    margin-right: 130px;
+}
+
+.about-us__tittle {
+    text-transform: uppercase;
+    font-size: 36px;
+    color: #333333;
+    margin-top: 0px;
+}
+.about-us__description {
+    font-size: 18px;
+    color: #cfcfcf;
+    margin-bottom: 100px;
+}
+.about-us__image {
+    background-size: cover;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+}
+.about-us__image--1 {
+    width: 370px;
+    height: 615px;
+    background-position: 30% 100%;
+    background-image: url(/image/living-room.jpg);
+}
+.about-us__image--2 {
+    width: 670px;
+    height: 575px;
+    background-image: url(/image/living-room2.jpg);
+    margin-bottom: 110px;
+}
+
+.about-us__image--3{
+    width: 670px;
+    height: 370px;
+    background-image: url(/image/living-room3.jpg);
+    margin-bottom: 180px;
+}
+
+.our-service {
+    margin: 0; 
+    padding: 0;
+    background: linear-gradient(to right, #ff7f04 0%,#ff7c00 30%,#ffa73d 78%,#ffb76b 100%);
+    text-align: center;
+}
+
+.our-service-tittle {
+    margin: 0; 
+    padding-top: 130px;
+    color: #fff;
+    font-size: 36px;
+    font-weight: black;
+    text-transform: uppercase;
+}
+
+.our-service__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 60px 0px 160px 0px;
+}
+
+.contact-us {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+}
+.contact-us__wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin: 180px 0px 75px 0px;
+    padding: 0;
+    
+}
+.contact-us__image {
+    box-sizing: border-box;
+    flex: 0 1 auto;
+    width: 585px;
+    height: 640px;
+    margin: 0;
+    padding: 0;
+    background-image: url(/image/living-room.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+}
+.contact-us__form {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 80px 100px 105px 115px;
+    flex: 0 1 auto;
+    background-color: #192a37;
+    width: 585px;
+    height: 640px;
+    text-align: left;
+}
+.contact-us__desc {
+    color: #fff;
+    font-weight: normal;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+.contact-us__form-tittle {
+    color: #fff;
+    font-weight: black;
+    text-transform: uppercase;
+    font-size: 44px;
+    padding: 0;
+    margin: 0;
+}
+.contact-us__item {
+    width: 100%;
+    color: #fff;
+    position: relative;
+}
+
+.contact-us__item {
+    display: block;
+    width: 100%;
+    background-color: rgba(0,0, 0, 0);
+    border: none;
+    border-bottom: 4px solid #3b4953;
+    color: #fff;   
+    transition: all .5s; 
+    position: relative;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    transition: all .5s linear;
+}
+
+.contact-us__item:hover,
+.contact-us__item:focus{
+    border-bottom: 4px solid #fff;    
+}
+
+.contact-us__item::placeholder{
+    color: #3b4953;
+    transition: all .5s;
+}
+
+.contact-us__item:hover::placeholder,
+.contact-us__item:focus::placeholder{
+    color: #fff;
+}
+
+.contact-us__item{
+    background: url(/image/user-black.png) no-repeat;
+    background-repeat: no-repeat;
+    background-position: 95% 10px;
+}
+
+.contact-us__item:hover,
+.contact-us__item:focus{
+    background: url(/image/user.png) no-repeat;
+    background-position: 95% 10px;
+}
+
+.contact-us__item--number{
+    background: url(/image/phone-black.png) no-repeat;
+    background-position: 95% 10px;
+}
+
+.contact-us__item--number:hover,
+.contact-us__item--number:focus{
+    background: url(/image/phone.png) no-repeat;
+    background-position: 95% 10px;
+}
+
+.contact-us__item--email{
+    background: url(/image/email-black.png) no-repeat;
+    background-position: 95% 10px;
+}
+
+.contact-us__item--email:hover,
+.contact-us__item--email:focus{
+    background: url(/image/email.png) no-repeat; 
+    background-position: 95% 10px;   
+}
+
+.contact-us__submit{
+    box-sizing: border-box;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    background-color: #f7941d;
+    margin: 0;
+    padding: 1.5rem 2rem;
+    font-size: 15px;
+    font-weight: black;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+}
+
+.contact-us__submit:hover,
+.contact-us__submit:focus{
+    background-color: #f36b1c;
+    transition: all .5s linear;
+}
+
+.contact-us__form-policy{
+    font-size: 14px;
+    font-weight: normal;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+
+.portfolio {
+    margin: 0;
+    padding: 0 0 185px 0;
+    background-color: #fff;
+}
+.portfolio-tittle {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0px;
+    padding: 75px 0 45px 0;
+}
+.portfolio-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+.portfolio-list__item {
+    flex: 1 1 auto;
+    max-height: 300px;
+    max-width: 270px;
+}
+
+.portfolio-list__item-image{
+    width: 100%;
+    height: 200px;
+    padding: 0;
+    margin: 0;
+}
+.portfolio-list__item-link {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+.portfolio-list__item-link-desc {
+    display: inline-block;
+    font-size: 24px;
+    color: black;
+    text-align: left;
+    font-weight: bold;
+    margin: 20px 0px 5px 0px;
+    padding: 0;
+}
+.portfolio-list__item-link>p {
+    font-size: 15px;
+    color: #9f9f9f;
+    margin: 0;
+    padding: 0;
+}
+.portfolio-see-more {
+    display: block;
+    border: 4px solid grey;
+    width: 150px;
+    text-align: center;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 20px;
+    margin: 55px auto;
+    margin-bottom: 0px;
+    transition: all .2s linear;
+}
+
+.portfolio-see-more:hover{
+    border: 4px solid rgb(0, 0, 0);
+    border-radius:  0 10px 0px 10px;
+}
+
+.footer {
+ margin-bottom: 200px;
+ padding: 0;    
+}
+.footer__menu--footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+.header__logo--footer {
+    margin: 0 83px 0 0;
+    padding: 0;
+}
+.header-menu--footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 90px 0 0 0 ;
+    padding: 0;
+}
+
+.header-menu__list-item--footer{
+    margin: 0px;
+    padding: 10px;    
+    font-size: 14px;
+    border: 1px solid #9e9e9e00;
+    transition: all .5s linear;
+}
+
+.header-menu__list-item--footer:hover,
+.header-menu__list-item--footer:focus{
+    border: 1px solid #9e9e9e;
+}
+
+.header-menu__list-item--footer-active{
+    box-sizing: border-box;
+    display: block;
+    padding: 10px;
+    border: 1px solid #fff; 
+    margin: 0;
+}
+
+.footer-contacts {
+    margin: 0;
+    margin-left: 295px;
+    padding: 0;
+}
+.footer-contacts__par {
+    font-size: 16px;
+    color: #cecccc;
+}
+.footer-contacts__par>span{
+    color: #e9e9e9;
+    font-weight: 800;
+}
+
+.footer-contacts__block{
+    display: flex;
+}
+
+.footer-contacts__privacy {
+    font-size: 16px;
+    color: #cecccc;
+    margin: 0;
+    margin-right: 10px;
+}
+
+@media (max-width:1366px){
+
+    .container{
+       max-width: 940px;
+    }
+
+    .header-content__tittle {
+        font-size: 5rem;
+        color: white;
+        line-height: 6.5rem;
+        text-transform: uppercase;
+        padding-left: 10rem;
+        margin-bottom: 0px;
+    }
+
+    .header-content__description{
+        padding-left: 10rem;
+        font-size: 2rem;
+    }
+
+    .about-us {
+        background-color: #fff;
+        margin: 0;
+        padding: 100px 0px 0px 0px;
+    }
+
+    .about-us__wrapper {
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .about-us__wrapper__left-side {
+        max-width: 300px;
+        margin-right: 65px;
+    }
+
+    .about-us__description{
+        margin-bottom: 50px;
+    }
+
+    .about-us__image--1 {
+        width: 100%;
+        height: 350px;
+        background-position: 30% 100%;
+        background-image: url(/image/living-room.jpg);
+    }
+
+    .about-us__image-block{
+        width: 33.33%;
+    }
+
+    .about-us__image--2 {
+        width: 80%;
+        height: 450px;
+        background-image: url(/image/living-room2.jpg);
+        margin-bottom: 55px;
+    }
+
+    .about-us__image--3 {
+        width: 80%;
+        height: 250px;
+        background-image: url(/image/living-room3.jpg);
+        margin-bottom: 90px;
+    }
+    .our-service__list-image{
+        width: 80px;
+        height: 80px;
+    }
+
+    .our-service-tittle{
+        padding: 60px 0px 0px 0;
+    }
+
+    .our-service__list{
+        padding: 60px 0px 60px 0px;
+    }
+
+    .our-service__list-description{
+        font-size: 18px;
+    }
+    
+    .contact-us__form{
+        flex: 1 1 auto;
+        padding: 30px 25px 30px 25.25px;
+        width: 400px;
+        height: 400px;  
+    }
+
+    .contact-us__form-header{
+        align-self: flex-start;
+    }
+
+    .contact-us__desc{
+        font-size: 15px;
+    }
+
+    .contact-us__form-tittle{
+        font-size: 20px;
+    }
+
+    .contact-us__wrapper{
+        margin: 90px 0 0 0;
+    }
+
+    .contact-us__image{
+        flex: 1 1 auto;
+        height: 400px;
+        width: 400px;
+    }
+
+    
+    .contact-us__submit{
+        padding: 1rem;
+        font-size: 13px;
+    }
+
+    .portfolio{
+        padding: 0 0 90px 0;
+    }
+    .portfolio-tittle{
+        padding: 35px 0 35px 0 ;
+    }
+
+    .portfolio-list__item {
+        max-height: 300px;
+        max-width: 200px;
+    }
+
+    .portfolio-list__item-link-desc{
+        font-size: 20px;
+    }
+
+    .portfolio-see-more{
+        padding: 10px;
+    }
+}
+
+@media (max-width: 1024px){
+
+    .container{
+        max-width: 940px;
+        padding: 0 10px;
+        margin: 0 auto;
+    }
+
+    body.lock{
+        overflow: hidden;
+    }
+
+    .burger-menu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        width: 30px;
+        height: 20px;
+        z-index: 100;
+    }
+
+    .burger-menu:after,
+    .burger-menu:before{
+        content: "";
+        width: 100%;
+        height: 2px;
+        background-color: rgb(255, 255, 255);
+        position: absolute;   
+        transition: .2s linear; 
+    }
+
+    .burger-menu:after{
+        bottom: 0;
+    }
+
+    .burger-menu:before{
+        top: 0;
+    }
+
+    .nav-menu__burger{
+        position: absolute;
+        top: 50%;
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: rgb(255, 255, 255);
+        margin: auto 0;
+    }
+
+    .header-wrapper{
+        display: block;
+        position: absolute;
+        top: -300%;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 1;
+        transition: .4s linear;
+        overflow: auto;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .burger-menu.active:before{
+        transform: rotate(45deg);
+        transition: .2s linear;
+        top: 9px;
+        background-color: rgb(0, 0, 0);
+    }
+
+    .burger-menu.active:after{
+        transform: rotate(-45deg);
+        transition: .2s linear;
+        bottom: 9px;
+        background-color: rgb(0, 0, 0);
+    }
+    .burger-menu.active span{
+        transform: scale(0);
+    }
+
+    .header-wrapper.active{
+        top: 0;
+        background-color: white;
+    }
+
+    .header-menu__list-item{
+        display: inline-block;
+        padding: 10px 0 20px 0px;
+        color: black;
+        font-size: 30px;
+        font-weight: 800;
+    }
+
+    .header-menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 100px 0 0 0 ;
+    }
+
+    .header-menu__list {
+        padding-right: 0px;
+        list-style: none;
+    }
+
+    .header-info__phone-img {
+        padding-top: 60px;
+    }
+
+    .header-content__tittle {
+        font-size: 3.5rem;
+        color: white;
+        line-height: 3.2rem;
+        text-transform: uppercase;
+        padding-left: 0;
+        margin-bottom: 0px;
+        text-align: left;
+    }
+
+    .header-content__description {
+        padding-left: 0px;
+        font-size: 1.5rem;
+        text-align: left;
+    }
+
+    .header-menu--footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        margin: 90px 0 0 0;
+        padding: 0;
+    }
+
+}
+
+@media (max-width:768px){
+    .container{
+        width: 100%;
+    }
+
+    .header-content__tittle{
+        padding-left: 10rem;
+    }
+
+    .header-content__description{
+        padding-left: 10rem;
+    }
+
+    .header-info{
+        margin-right: 2.5rem; 
+    }
+
+    .header-info__phone-number{
+        font-size: 14px;
+    }
+
+    .header-info__domain{
+        font-size: 14px;
+    }
+
+    .header-menu--footer {
+        flex-direction: row;
+        margin: 90px 0 0 0;
+        padding: 0;
+    }
+    .about-us__wrapper__left-side {
+        max-width: 40%;
+        margin-right: 25px;
+    }
+
+    .about-us__tittle {
+        font-size: 20px;
+        margin-top: 0px;
+    }
+
+    .about-us__description {
+        font-size: 13px;
+    }
+
+    .about-us__image--1 {
+        width: 100%;
+        height: 50vh;
+        flex: 1 1 auto;
+    }
+
+    .about-us__image-block {
+        width: 50%;
+    }
+
+    .about-us__image--2 {
+        width: 80%;
+        height: 50vh;
+        background-image: url(/image/living-room2.jpg);
+        margin-bottom: 43px;
+    }
+
+    .about-us__image--3 {
+        width: 80%;
+        height: 40vh;
+        margin-bottom: 90px;
+    }
+
+    .portfolio-list {
+        justify-content: center;
+    }
+
+    .portfolio-list__item {
+       padding: 20px 25px;
+    }
+
+    .footer-contacts {
+        margin: 0;
+        margin-left: 16.3rem;
+        padding: 0;
+    }
+
+    .header__logo--footer img{
+        display: block;
+        width: 200px;
+    }
+
+    .header__logo--footer {
+        margin: 0 .5rem 0 0;
+        padding: 0;
+    }
+
+
+}
+
+@media (max-width:525px){
+    .container{
+        width: 100%;
+    }
+
+    .header-wrapper {
+        top: -350%;
+    }
+
+    .header__logo{
+        display: none;
+    }
+
+    .header-info__phone-number{
+        font-size: 14px;
+    }
+
+    .header-info__domain{
+        font-size: 14px;
+    }
+
+    .header-content__tittle {
+        padding-left: 0;
+    }
+
+    .header-content__description {
+        padding-left: 0;
+    }
+
+    .about-us {
+        background-color: #fff;
+        margin: 0;
+        padding: 60px 0px 0px 0px;
+    }
+
+    .about-us__wrapper__left-side {
+        max-width: 40%;
+        margin-right: 25px;
+    }
+
+    .about-us__tittle {
+        font-size: 20px;
+        margin-top: 0px;
+    }
+
+    .about-us__description {
+        font-size: 13px;
+    }
+
+    .about-us__image--1 {
+        width: 100%;
+        height: 50vh;
+        flex: 1 1 auto;
+    }
+
+    .about-us__image-block {
+        width: 50%;
+    }
+
+    .about-us__image--2 {
+        width: 80%;
+        height: 50vh;
+        background-image: url(/image/living-room2.jpg);
+        margin-bottom: 43px;
+    }
+
+    .about-us__image--3 {
+        width: 80%;
+        height: 40vh;
+        margin-bottom: 90px;
+    }
+
+    .our-service__list {
+        justify-content: center;
+        padding: 60px 0px 160px 0px;
+    }
+
+    .our-service-tittle {
+        font-size: 20px;
+        padding: 30px 0px 0px 0;
+    }
+
+    .our-service__list-image {
+        width: 50px;
+        height: 50px;
+    }
+
+    .our-service__list {
+        padding: 30px 0px 30px 0px;
+    }
+
+    li.our-service__list-item {
+        padding-left: 20px;
+        padding-top: 10px;
+        padding-right: 20px;
+        width: 130px;
+    }
+
+    .contact-us__image {
+        display: none;
+    }
+
+    .contact-us__item::placeholder{
+        font-size: 13px;
+    }
+
+    .contact-us__submit {
+        padding: 1rem;
+        font-size: 11px;
+    }
+
+    .portfolio-list {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        flex-wrap: nowrap;
+        margin: 0;
+        padding: 0;
+        overflow: auto;
+    }
+
+    .portfolio-list__item {
+        flex: 1 0 auto;
+        max-height: 300px;
+        max-width: 200px;
+    }
+
+    .header__logo--footer{
+        display: block;
+    }
+
+    .header-menu--footer {
+        flex-direction: column;
+        margin: 90px 0 0 0;
+        padding: 0;
+    }
+
+    .header__logo--footer {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .header-menu__list {
+        padding-right: 0px;
+        list-style: none;
+        margin: 15px auto 0px auto;
+    }
+
+    .footer-contacts {
+        margin: 0;
+        margin-left: 2rem;
+        padding: 0;
+    }
+}
+
+@media (max-width:320px){
+    
+    .our-service-tittle {
+        padding: 30px 0px 0px 0;
+        font-size: 20px;
+    }
+
+    li.our-service__list-item {
+        padding: 0;
+        width: 100px;
+    }
+
+    .our-service__list-image{
+        width: 50px;
+        height: 50px;
+    }
+
+    .our-service__list-description {
+        font-size: 15px;
+    }
+
+    .contact-us__image {
+        display: none;
+    }
+}
+
+.overflow{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.336);
+    position: absolute;
+    top: 0;
+}
