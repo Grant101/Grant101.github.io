@@ -245,19 +245,19 @@ a{
     width: 370px;
     height: 615px;
     background-position: 30% 100%;
-    background-image: url(image/living-room.jpg);
+    background-image: url(../image/living-room.jpg);
 }
 .about-us__image--2 {
     width: 670px;
     height: 575px;
-    background-image: url(image/living-room2.jpg);
+    background-image: url(../image/living-room2.jpg);
     margin-bottom: 110px;
 }
 
 .about-us__image--3{
     width: 670px;
     height: 370px;
-    background-image: url(image/living-room3.jpg);
+    background-image: url(../image/living-room3.jpg);
     margin-bottom: 180px;
 }
 
