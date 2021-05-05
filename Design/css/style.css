@@ -197,7 +197,7 @@ a{
 }
   
 .image-1{
-    background-image: url(image/header-image1.webp);
+    background-image: url(../image/header-image1.webp);
 }
 
 .image-2{
@@ -311,7 +311,7 @@ a{
     height: 640px;
     margin: 0;
     padding: 0;
-    background-image: url(image/living-room.jpg);
+    background-image: url(../image/living-room.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 100% 100%;
@@ -380,36 +380,36 @@ a{
 }
 
 .contact-us__item{
-    background: url(image/user-black.png) no-repeat;
+    background: url(../image/user-black.png) no-repeat;
     background-repeat: no-repeat;
     background-position: 95% 10px;
 }
 
 .contact-us__item:hover,
 .contact-us__item:focus{
-    background: url(image/user.png) no-repeat;
+    background: url(../image/user.png) no-repeat;
     background-position: 95% 10px;
 }
 
 .contact-us__item--number{
-    background: url(image/phone-black.png) no-repeat;
+    background: url(../image/phone-black.png) no-repeat;
     background-position: 95% 10px;
 }
 
 .contact-us__item--number:hover,
 .contact-us__item--number:focus{
-    background: url(image/phone.png) no-repeat;
+    background: url(../image/phone.png) no-repeat;
     background-position: 95% 10px;
 }
 
 .contact-us__item--email{
-    background: url(image/email-black.png) no-repeat;
+    background: url(../image/email-black.png) no-repeat;
     background-position: 95% 10px;
 }
 
 .contact-us__item--email:hover,
 .contact-us__item--email:focus{
-    background: url(image/email.png) no-repeat; 
+    background: url(../image/email.png) no-repeat; 
     background-position: 95% 10px;   
 }
 
@@ -639,14 +639,14 @@ a{
     .about-us__image--2 {
         width: 80%;
         height: 450px;
-        background-image: url(/image/living-room2.jpg);
+        background-image: url(../image/living-room2.jpg);
         margin-bottom: 55px;
     }
 
     .about-us__image--3 {
         width: 80%;
         height: 250px;
-        background-image: url(image/living-room3.jpg);
+        background-image: url(../image/living-room3.jpg);
         margin-bottom: 90px;
     }
     .our-service__list-image{
@@ -917,7 +917,7 @@ a{
     .about-us__image--2 {
         width: 80%;
         height: 50vh;
-        background-image: url(image/living-room2.jpg);
+        background-image: url(../image/living-room2.jpg);
         margin-bottom: 43px;
     }
 
@@ -1016,7 +1016,7 @@ a{
     .about-us__image--2 {
         width: 80%;
         height: 50vh;
-        background-image: url(image/living-room2.jpg);
+        background-image: url(../image/living-room2.jpg);
         margin-bottom: 43px;
     }
 
