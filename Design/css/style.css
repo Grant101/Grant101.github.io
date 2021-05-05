@@ -197,15 +197,15 @@ a{
 }
   
 .image-1{
-    background-image: url(image/header-image1.webp);
+    background-image: url(..//image/header-image1.webp);
 }
 
 .image-2{
-    background-image: url(image/design2.jpg);
+    background-image: url(..//image/design2.jpg);
 }
 
 .image-3{
-    background-image: url(image/header-image1.webp);
+    background-image: url(..//image/header-image1.webp);
 }
 
 .about-us {
