@@ -629,7 +629,7 @@ a{
         width: 100%;
         height: 350px;
         background-position: 30% 100%;
-        background-image: url(image/living-room.jpg);
+        background-image: url(../image/living-room.jpg);
     }
 
     .about-us__image-block{
